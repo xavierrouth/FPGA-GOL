@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Mar 31 23:52:07 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : game-of-life
+Top-level Entity Name : game_of_life
+Family : MAX 10
+Total logic elements : 45,403
+    Total combinational functions : 45,265
+    Dedicated logic registers : 5,237
+Total registers : 5237
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 128
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
