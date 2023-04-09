@@ -26,20 +26,26 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
                                       Reset,     // reset signal
                          output logic hs,        // Horizontal sync pulse.  Active low
 								              vs,        // Vertical sync pulse.  Active low
-												  pixel_clk, // 25 MHz pixel clock output
+												 
 												  blank,     // Blanking interval indicator.  Active low.
 												  sync,      // Composite Sync signal.  Active low.  We don't use it in this lab,
 												             //   but the video DAC on the DE2 board requires an input for it.
-								 output [9:0] DrawX,     // horizontal coordinate
+								 output [11:0] DrawX,     // horizontal coordinate
 								              DrawY );   // vertical coordinate
     
     // 800 horizontal pixels indexed 0 to 799
     // 525 vertical pixels indexed 0 to 524
-    parameter [9:0] hpixels = 10'b1100011111;
-    parameter [9:0] vlines = 10'b1000001100;
+    //parameter [9:0] hpixels = 10'b1100011111;
+    //parameter [9:0] vlines = 10'b1000001100;
+	 
+	 // 2160 horizontal pixels indexed 0 to 2159
+    // 1250 vertical pixels indexed 0 to 1249
+    parameter [11:0] hpixels = 12'd2159;
+    parameter [11:0] vlines = 12'd1249;
+	 
 	 
 	 // horizontal pixel and vertical line counters
-    logic [9:0] hc, vc;
+    logic [11:0] hc, vc;
     logic clkdiv;
     
 	 // signal indicates if ok to display color for a pixel
@@ -48,30 +54,32 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
     //Disable Composite Sync
     assign sync = 1'b0;
      
-	//This cuts the 50 Mhz clock in half to generate a 25 MHz pixel clock  
-    always_ff @ (posedge Clk or posedge Reset )
-    begin 
-        if (Reset) 
-            clkdiv <= 1'b0;
-        else 
-            clkdiv <= ~ (clkdiv);
-    end
-   
+	//This cuts the 50 Mhz clock in half to generate a 25 MHz pixel clock 
+	/**
+	always_ff @ (posedge Clk or posedge Reset )
+	begin 
+		 if (Reset) 
+			clkdiv <= 1'b0;
+		 else 
+			clkdiv <= ~ (clkdiv);
+	end
+	*/
+	
 	//Runs the horizontal counter  when it resets vertical counter is incremented
-   always_ff @ (posedge clkdiv or posedge Reset )
+   always_ff @ (posedge Clk or posedge Reset )
 	begin: counter_proc
 		  if ( Reset ) 
 			begin 
-				 hc <= 10'b0000000000;
-				 vc <= 10'b0000000000;
+				 hc <= 12'b000000000000;
+				 vc <= 12'b000000000000;
 			end
 				
 		  else 
 			 if ( hc == hpixels )  //If hc has reached the end of pixel count
 			  begin 
-					hc <= 10'b0000000000;
+					hc <= 12'b000000000000;
 					if ( vc == vlines )   //if vc has reached end of line count
-						 vc <= 10'b0000000000;
+						 vc <= 12'b000000000000;
 					else 
 						 vc <= (vc + 1);
 			  end
@@ -81,10 +89,48 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
    
     assign DrawX = hc;
     assign DrawY = vc;
+	 
+	 // NEW 
+	 //horizontal sync pulse is 192 pixels long at pixels 1664-1856
+    //(signal is registered to ensure clean output waveform)
+    always_ff @ (posedge Reset or posedge Clk )
+    begin : hsync_proc
+        if ( Reset ) 
+            hs <= 1'b0;
+        else  
+            if ((((hc + 1) >= 12'd1664) & ((hc + 1) < 12'd1856))) 
+                hs <= 1'b0;
+            else 
+				    hs <= 1'b1;
+    end
+	 
+    //vertical sync pulse is 3 lines long at line 1201-1203
+    //(signal is registered to ensure clean output waveform)
+    always_ff @ (posedge Reset or posedge Clk )
+    begin : vsync_proc
+        if ( Reset ) 
+           vs <= 1'b0;
+        else 
+            if ( ((vc + 1) == 12'd1201) | ((vc + 1) == 12'd1202) | ((vc + 1) == 12'd1203)) 
+			       vs <= 1'b0;
+            else 
+			       vs <= 1'b1;
+    end
+       
+    //only display pixels between horizontal 0-1599 and vertical 0-1199 (640x480)
+    //(This signal is registered within the DAC chip, so we can leave it as pure combinational logic here)    
+    always_comb
+    begin 
+        if ( (hc >= 12'd1599) | (vc >= 12'd1199) ) 
+            display = 1'b0;
+        else 
+            display = 1'b1;
+    end 
    
+	 /**
 	 //horizontal sync pulse is 96 pixels long at pixels 656-752
     //(signal is registered to ensure clean output waveform)
-    always_ff @ (posedge Reset or posedge clkdiv )
+    always_ff @ (posedge Reset or posedge Clk )
     begin : hsync_proc
         if ( Reset ) 
             hs <= 1'b0;
@@ -97,7 +143,7 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
 	 
     //vertical sync pulse is 2 lines(800 pixels) long at line 490-491
     //(signal is registered to ensure clean output waveform)
-    always_ff @ (posedge Reset or posedge clkdiv )
+    always_ff @ (posedge Reset or posedge Clk )
     begin : vsync_proc
         if ( Reset ) 
            vs <= 1'b0;
@@ -117,9 +163,10 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
         else 
             display = 1'b1;
     end 
+	 */
    
     assign blank = display;
-    assign pixel_clk = clkdiv;
+	 
     
 
 endmodule

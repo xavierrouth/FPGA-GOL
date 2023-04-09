@@ -1,5 +1,5 @@
-`define WIDTH 80
-`define HEIGHT 60
+`define WIDTH 50
+`define HEIGHT 40
 
 module game_of_life (
     ///////// Clocks /////////
@@ -33,11 +33,16 @@ module game_of_life (
 // VGA Signals
 logic RESET;
 logic VGA_CLK;
+logic VGA_CLK_FAST;
 logic blank;
-logic [9:0] drawx, drawy;
+logic [11:0] drawx, drawy;
 logic draw;
 
-vga_controller VGA(.Clk(MAX10_CLK1_50), .Reset(RESET), .hs(VGA_HS), .vs(VGA_VS), .pixel_clk(VGA_CLK), .blank(blank), .DrawX(drawx), .DrawY(drawy));
+// c0 is 162 Mhz
+// c1 is 25.175
+
+clk_multiplier clk_controller(.inclk0(MAX10_CLK1_50), .areset(RESET), .c0(VGA_CLK_FAST), .c1(VGA_CLK));
+vga_controller VGA(.Clk(VGA_CLK_FAST), .Reset(RESET), .hs(VGA_HS), .vs(VGA_VS), .blank(blank), .DrawX(drawx), .DrawY(drawy));
 
 // Game Of Life Signals
 logic cells [`WIDTH][`HEIGHT];
@@ -54,6 +59,7 @@ logic [31:0] counterout;
 
 assign game_clk = (~KEY[1] | (counterout == (50000000 >> SW[3:0])));
 
+/**
 always_ff @ (posedge MAX10_CLK1_50)
 begin
 	
@@ -130,23 +136,24 @@ generate
 		end
 	end
 endgenerate
-
+*/
 // Draw Logic
 always_comb 
 begin DRAW: 
-	draw = cells[drawx >> 3][drawy >> 3];
+	//draw = cells[drawx >> 3][drawy >> 3];
+	draw = (drawy == 12'd200);
 end
 
 // Output Logic
-always_ff @(posedge VGA_CLK)
+always_ff @(posedge VGA_CLK_FAST)
 begin RGB_OUTPUT:
     if (draw) begin
         VGA_R <= 4'b1111;
-        VGA_G <= 4'b1111;
+        VGA_G <= 4'b0010;
         VGA_B <= 4'b1111;
     end else begin
         VGA_R <= 4'b0000;
-        VGA_G <= 4'b0000;
+        VGA_G <= 4'b1101;
         VGA_B <= 4'b0000;
     end
 end

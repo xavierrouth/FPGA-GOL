@@ -1,18 +1,18 @@
-Fitter Status : Successful - Fri Mar 31 23:53:15 2023
+Fitter Status : Successful - Sun Apr 09 13:33:17 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : game-of-life
 Top-level Entity Name : game_of_life
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 45,521 / 49,760 ( 91 % )
-    Total combinational functions : 45,268 / 49,760 ( 91 % )
-    Dedicated logic registers : 5,236 / 49,760 ( 11 % )
-Total registers : 5236
+Total logic elements : 584 / 49,760 ( 1 % )
+    Total combinational functions : 464 / 49,760 ( < 1 % )
+    Dedicated logic registers : 407 / 49,760 ( < 1 % )
+Total registers : 407
 Total pins : 85 / 360 ( 24 % )
 Total virtual pins : 0
 Total memory bits : 128 / 1,677,312 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
 UFM blocks : 0 / 1 ( 0 % )
 ADC blocks : 0 / 2 ( 0 % )
