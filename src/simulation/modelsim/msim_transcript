@@ -1,0 +1,118 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do game_of_life_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/dev/FPGA_GOL/src {C:/dev/FPGA_GOL/src/clk_multiplier.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:59:52 on Apr 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/dev/FPGA_GOL/src" C:/dev/FPGA_GOL/src/clk_multiplier.v 
+# -- Compiling module clk_multiplier
+# 
+# Top level modules:
+# 	clk_multiplier
+# End time: 18:59:52 on Apr 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/dev/FPGA_GOL/src/db {C:/dev/FPGA_GOL/src/db/clk_multiplier_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:59:52 on Apr 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/dev/FPGA_GOL/src/db" C:/dev/FPGA_GOL/src/db/clk_multiplier_altpll.v 
+# -- Compiling module clk_multiplier_altpll
+# 
+# Top level modules:
+# 	clk_multiplier_altpll
+# End time: 18:59:52 on Apr 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/dev/FPGA_GOL/src {C:/dev/FPGA_GOL/src/VGA_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:59:52 on Apr 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/dev/FPGA_GOL/src" C:/dev/FPGA_GOL/src/VGA_controller.sv 
+# -- Compiling module vga_controller
+# 
+# Top level modules:
+# 	vga_controller
+# End time: 18:59:52 on Apr 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/dev/FPGA_GOL/src {C:/dev/FPGA_GOL/src/game_of_life.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:59:52 on Apr 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/dev/FPGA_GOL/src" C:/dev/FPGA_GOL/src/game_of_life.sv 
+# -- Compiling module game_of_life
+# 
+# Top level modules:
+# 	game_of_life
+# End time: 18:59:52 on Apr 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/dev/FPGA_GOL/src {C:/dev/FPGA_GOL/src/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:59:52 on Apr 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/dev/FPGA_GOL/src" C:/dev/FPGA_GOL/src/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:59:52 on Apr 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 18:59:52 on Apr 09,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.game_of_life
+# Loading work.clk_multiplier
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.vga_controller
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# ** Warning: (vsim-3017) C:/dev/FPGA_GOL/src/game_of_life.sv(44): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/clk_controller File: C:/dev/FPGA_GOL/src/clk_multiplier.v
+# ** Warning: (vsim-3722) C:/dev/FPGA_GOL/src/game_of_life.sv(44): [TFMPC] - Missing connection for port 'locked'.
+# ** Warning: (vsim-3017) C:/dev/FPGA_GOL/src/game_of_life.sv(45): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/VGA File: C:/dev/FPGA_GOL/src/VGA_controller.sv
+# ** Warning: (vsim-3722) C:/dev/FPGA_GOL/src/game_of_life.sv(45): [TFMPC] - Missing connection for port 'sync'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 27000  Instance: testbench.DUT.clk_controller.altpll_component.cycloneiii_pll.pll3
+# Break key hit
+# Break in Module MF_cycloneiii_pll at /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v line 17002
+# Error opening C:/build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# Path name 'C:/build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v' doesn't exist.
+restart -f
+# ** Warning: (vsim-3017) C:/dev/FPGA_GOL/src/game_of_life.sv(44): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/clk_controller File: C:/dev/FPGA_GOL/src/clk_multiplier.v
+# ** Warning: (vsim-3722) C:/dev/FPGA_GOL/src/game_of_life.sv(44): [TFMPC] - Missing connection for port 'locked'.
+# ** Warning: (vsim-3017) C:/dev/FPGA_GOL/src/game_of_life.sv(45): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/VGA File: C:/dev/FPGA_GOL/src/VGA_controller.sv
+# ** Warning: (vsim-3722) C:/dev/FPGA_GOL/src/game_of_life.sv(45): [TFMPC] - Missing connection for port 'sync'.
+run -all
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 27000  Instance: testbench.DUT.clk_controller.altpll_component.cycloneiii_pll.pll3
+# Break key hit
+# Break in Module cda_scale_cntr at /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v line 14688
+# Error opening C:/build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# Path name 'C:/build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v' doesn't exist.
+run -all
+run -all
+run -all
+# End time: 19:05:53 on Apr 09,2023, Elapsed time: 0:06:01
+# Errors: 2, Warnings: 8

@@ -23,11 +23,11 @@ module game_of_life (
     output   [ 7: 0]   HEX5,
 
     ///////// VGA /////////
-    output             VGA_HS,
-    output             VGA_VS,
-    output   [ 3: 0]   VGA_R,
-    output   [ 3: 0]   VGA_G,
-    output   [ 3: 0]   VGA_B
+    output   logic          VGA_HS,
+    output   logic          VGA_VS,
+    output   logic [ 3: 0]   VGA_R,
+    output   logic [ 3: 0]   VGA_G,
+    output   logic [ 3: 0]   VGA_B
 );
 
 // VGA Signals
@@ -35,14 +35,14 @@ logic RESET;
 logic VGA_CLK;
 logic VGA_CLK_FAST;
 logic blank;
-logic [11:0] drawx, drawy;
+logic [10:0] drawx, drawy;
 logic draw;
 
 // c0 is 162 Mhz
 // c1 is 25.175
 
-clk_multiplier clk_controller(.inclk0(MAX10_CLK1_50), .areset(RESET), .c0(VGA_CLK_FAST), .c1(VGA_CLK));
-vga_controller VGA(.Clk(VGA_CLK_FAST), .Reset(RESET), .hs(VGA_HS), .vs(VGA_VS), .blank(blank), .DrawX(drawx), .DrawY(drawy));
+clk_multiplier clk_controller(.inclk0(MAX10_CLK1_50), .areset(RESET), .c0(VGA_CLK));
+vga_controller VGA(.Clk(VGA_CLK), .Reset(RESET), .hs(VGA_HS), .vs(VGA_VS), .blank(blank), .DrawX(drawx), .DrawY(drawy));
 
 // Game Of Life Signals
 logic cells [`WIDTH][`HEIGHT];
@@ -51,6 +51,7 @@ logic reset_cells;
 logic contn;
 
 assign reset_cells = ~KEY[0];
+assign RESET = ~KEY[0];
 
 assign LEDR[9:0] = SW[9:0];
 
@@ -138,24 +139,32 @@ generate
 endgenerate
 */
 // Draw Logic
+
 always_comb 
 begin DRAW: 
 	//draw = cells[drawx >> 3][drawy >> 3];
-	draw = (drawy == 12'd200);
+	draw = drawy[2] | drawx[2];
+	
 end
 
 // Output Logic
-always_ff @(posedge VGA_CLK_FAST)
+always_ff @(posedge VGA_CLK)
 begin RGB_OUTPUT:
-    if (draw) begin
-        VGA_R <= 4'b1111;
-        VGA_G <= 4'b0010;
-        VGA_B <= 4'b1111;
-    end else begin
-        VGA_R <= 4'b0000;
-        VGA_G <= 4'b1101;
-        VGA_B <= 4'b0000;
-    end
+	if (~blank) begin
+		VGA_R <= 4'b0000;
+		VGA_G <= 4'b0000;
+		VGA_B <= 4'b0000;
+	end else begin
+		if (draw) begin
+			VGA_R <= 4'b1111;
+			VGA_G <= 4'b0000;
+			VGA_B <= 4'b1111;
+		end else begin
+			VGA_R <= 4'b1111;
+			VGA_G <= 4'b1111;
+			VGA_B <= 4'b0000;
+		end
+	end
 end
 
 endmodule

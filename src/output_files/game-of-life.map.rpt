@@ -1,5 +1,5 @@
 Analysis & Synthesis report for game-of-life
-Sun Apr 09 13:33:11 2023
+Sun Apr 09 18:36:51 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,20 +15,21 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Source assignments for sld_signaltap:auto_signaltap_0
- 13. Parameter Settings for User Entity Instance: clk_multiplier:clk_controller|altpll:altpll_component
- 14. Parameter Settings for User Entity Instance: vga_controller:VGA
- 15. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 16. altpll Parameter Settings by Entity Instance
- 17. Port Connectivity Checks: "vga_controller:VGA"
- 18. Port Connectivity Checks: "clk_multiplier:clk_controller"
- 19. Signal Tap Logic Analyzer Settings
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Connections to In-System Debugging Instance "auto_signaltap_0"
- 23. Analysis & Synthesis Messages
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Source assignments for sld_signaltap:auto_signaltap_0
+ 14. Parameter Settings for User Entity Instance: clk_multiplier:clk_controller|altpll:altpll_component
+ 15. Parameter Settings for User Entity Instance: vga_controller:VGA
+ 16. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 17. altpll Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "vga_controller:VGA"
+ 19. Port Connectivity Checks: "clk_multiplier:clk_controller"
+ 20. Signal Tap Logic Analyzer Settings
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -54,15 +55,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 09 13:33:11 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 09 18:36:51 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; game-of-life                                ;
 ; Top-level Entity Name              ; game_of_life                                ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 596                                         ;
-;     Total combinational functions  ; 461                                         ;
-;     Dedicated logic registers      ; 408                                         ;
-; Total registers                    ; 408                                         ;
+; Total logic elements               ; 608                                         ;
+;     Total combinational functions  ; 478                                         ;
+;     Dedicated logic registers      ; 405                                         ;
+; Total registers                    ; 405                                         ;
 ; Total pins                         ; 85                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 128                                         ;
@@ -252,20 +253,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 596                      ;
+; Estimated Total logic elements              ; 608                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 461                      ;
+; Total combinational functions               ; 478                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 188                      ;
-;     -- 3 input functions                    ; 121                      ;
-;     -- <=2 input functions                  ; 152                      ;
+;     -- 4 input functions                    ; 190                      ;
+;     -- 3 input functions                    ; 124                      ;
+;     -- <=2 input functions                  ; 164                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 368                      ;
+;     -- normal mode                          ; 385                      ;
 ;     -- arithmetic mode                      ; 93                       ;
 ;                                             ;                          ;
-; Total registers                             ; 408                      ;
-;     -- Dedicated logic registers            ; 408                      ;
+; Total registers                             ; 405                      ;
+;     -- Dedicated logic registers            ; 405                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 85                       ;
@@ -278,8 +279,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 287                      ;
-; Total fan-out                               ; 2887                     ;
-; Average fan-out                             ; 2.75                     ;
+; Total fan-out                               ; 2917                     ;
+; Average fan-out                             ; 2.74                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -288,7 +289,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                      ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |game_of_life                                                                                                                           ; 461 (7)             ; 408 (12)                  ; 128         ; 0          ; 0            ; 0       ; 0         ; 85   ; 0            ; 0          ; |game_of_life                                                                                                                                                                                                                                                                                                                                            ; game_of_life                      ; work         ;
+; |game_of_life                                                                                                                           ; 478 (18)            ; 405 (9)                   ; 128         ; 0          ; 0            ; 0       ; 0         ; 85   ; 0            ; 0          ; |game_of_life                                                                                                                                                                                                                                                                                                                                            ; game_of_life                      ; work         ;
 ;    |clk_multiplier:clk_controller|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|clk_multiplier:clk_controller                                                                                                                                                                                                                                                                                                              ; clk_multiplier                    ; work         ;
 ;       |altpll:altpll_component|                                                                                                         ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|clk_multiplier:clk_controller|altpll:altpll_component                                                                                                                                                                                                                                                                                      ; altpll                            ; work         ;
 ;          |clk_multiplier_altpll:auto_generated|                                                                                         ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|clk_multiplier:clk_controller|altpll:altpll_component|clk_multiplier_altpll:auto_generated                                                                                                                                                                                                                                                 ; clk_multiplier_altpll             ; work         ;
@@ -333,7 +334,7 @@ refer to the applicable agreement for further details.
 ;                |lpm_shiftreg:ram_data_shift_out|                                                                                        ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:ram_data_shift_out                                                                                                               ; lpm_shiftreg                      ; work         ;
 ;                |lpm_shiftreg:status_data_shift_out|                                                                                     ; 15 (15)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:status_data_shift_out                                                                                                            ; lpm_shiftreg                      ; work         ;
 ;             |sld_rom_sr:crc_rom_sr|                                                                                                     ; 30 (30)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr                                                                                                                                                                                                          ; sld_rom_sr                        ; work         ;
-;    |vga_controller:VGA|                                                                                                                 ; 46 (46)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|vga_controller:VGA                                                                                                                                                                                                                                                                                                                         ; vga_controller                    ; work         ;
+;    |vga_controller:VGA|                                                                                                                 ; 52 (52)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |game_of_life|vga_controller:VGA                                                                                                                                                                                                                                                                                                                         ; vga_controller                    ; work         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -361,12 +362,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; VGA_R[3]~reg0                         ; Stuck at VCC due to stuck port data_in ;
+; VGA_R[2]~reg0                         ; Stuck at VCC due to stuck port data_in ;
+; VGA_R[1]~reg0                         ; Stuck at VCC due to stuck port data_in ;
+; VGA_R[0]~reg0                         ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 408   ;
+; Total registers                              ; 405   ;
 ; Number of registers using Synchronous Clear  ; 48    ;
 ; Number of registers using Synchronous Load   ; 58    ;
 ; Number of registers using Asynchronous Clear ; 133   ;
@@ -872,15 +886,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+-------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "vga_controller:VGA"                                                                                       ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                  ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; blank ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; DrawX ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; sync  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_controller:VGA"                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; sync ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------+
@@ -908,21 +920,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 85                          ;
-; cycloneiii_ff         ; 38                          ;
+; cycloneiii_ff         ; 35                          ;
 ;     ENA               ; 12                          ;
-;     plain             ; 26                          ;
-; cycloneiii_lcell_comb ; 54                          ;
+;     plain             ; 23                          ;
+; cycloneiii_lcell_comb ; 72                          ;
 ;     arith             ; 24                          ;
 ;         2 data inputs ; 24                          ;
-;     normal            ; 30                          ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 3                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 22                          ;
+;     normal            ; 48                          ;
+;         0 data inputs ; 4                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 24                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.57                        ;
+; Max LUT depth         ; 5.30                        ;
+; Average LUT depth     ; 3.25                        ;
 +-----------------------+-----------------------------+
 
 
@@ -984,7 +997,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Apr 09 13:32:54 2023
+    Info: Processing started: Sun Apr 09 18:36:35 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off game-of-life -c game-of-life
 Info (20032): Parallel compilation is enabled and will use up to 10 processors
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
@@ -995,6 +1008,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file gol_cel
     Info (12023): Found entity 1: gol_cell File: C:/dev/FPGA-GOL/src/gol_cell.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clk_multiplier.v
     Info (12023): Found entity 1: clk_multiplier File: C:/dev/FPGA-GOL/src/clk_multiplier.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/dev/FPGA-GOL/src/testbench.sv Line: 1
 Info (12127): Elaborating entity "game_of_life" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at game_of_life.sv(50): object "reset_cells" assigned a value but never read File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 50
 Warning (10036): Verilog HDL or VHDL warning at game_of_life.sv(57): object "game_clk" assigned a value but never read File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 57
@@ -1094,7 +1109,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_drb File: C:/dev/FPGA-GOL/src/db/cmpr_drb.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.04.09.13:33:03 Progress: Loading sldf0f17cc3/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.04.09.18:36:45 Progress: Loading sldf0f17cc3/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1167,6 +1182,10 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 23
     Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 23
     Warning (13410): Pin "HEX5[7]" is stuck at GND File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 23
+    Warning (13410): Pin "VGA_R[0]" is stuck at VCC File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 149
+    Warning (13410): Pin "VGA_R[1]" is stuck at VCC File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 149
+    Warning (13410): Pin "VGA_R[2]" is stuck at VCC File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 149
+    Warning (13410): Pin "VGA_R[3]" is stuck at VCC File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 149
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 35 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -1174,16 +1193,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (15899): PLL "clk_multiplier:clk_controller|altpll:altpll_component|clk_multiplier_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: C:/dev/FPGA-GOL/src/db/clk_multiplier_altpll.v Line: 50
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/dev/FPGA-GOL/src/game_of_life.sv Line: 9
-Info (21057): Implemented 713 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 725 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 73 output pins
-    Info (21061): Implemented 621 logic cells
+    Info (21061): Implemented 633 logic cells
     Info (21064): Implemented 1 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Sun Apr 09 13:33:11 2023
-    Info: Elapsed time: 00:00:17
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Sun Apr 09 18:36:51 2023
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:09
 
 

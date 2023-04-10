@@ -30,22 +30,17 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
 												  blank,     // Blanking interval indicator.  Active low.
 												  sync,      // Composite Sync signal.  Active low.  We don't use it in this lab,
 												             //   but the video DAC on the DE2 board requires an input for it.
-								 output [11:0] DrawX,     // horizontal coordinate
+								 output [10:0] DrawX,     // horizontal coordinate
 								              DrawY );   // vertical coordinate
     
-    // 800 horizontal pixels indexed 0 to 799
-    // 525 vertical pixels indexed 0 to 524
-    //parameter [9:0] hpixels = 10'b1100011111;
-    //parameter [9:0] vlines = 10'b1000001100;
+    // http://tinyvga.com/vga-timing/1368x768 @ 60Hz
 	 
-	 // 2160 horizontal pixels indexed 0 to 2159
-    // 1250 vertical pixels indexed 0 to 1249
-    parameter [11:0] hpixels = 12'd2159;
-    parameter [11:0] vlines = 12'd1249;
+    parameter [10:0] hpixels = 11'd1799;
+    parameter [10:0] vlines = 11'd794;
 	 
 	 
 	 // horizontal pixel and vertical line counters
-    logic [11:0] hc, vc;
+    logic [10:0] hc, vc;
     logic clkdiv;
     
 	 // signal indicates if ok to display color for a pixel
@@ -70,16 +65,16 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
 	begin: counter_proc
 		  if ( Reset ) 
 			begin 
-				 hc <= 12'b000000000000;
-				 vc <= 12'b000000000000;
+				 hc <= 11'b00000000000;
+				 vc <= 11'b00000000000;
 			end
 				
 		  else 
 			 if ( hc == hpixels )  //If hc has reached the end of pixel count
 			  begin 
-					hc <= 12'b000000000000;
+					hc <= 11'b00000000000;
 					if ( vc == vlines )   //if vc has reached end of line count
-						 vc <= 12'b000000000000;
+						 vc <= 11'b00000000000;
 					else 
 						 vc <= (vc + 1);
 			  end
@@ -91,27 +86,27 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
     assign DrawY = vc;
 	 
 	 // NEW 
-	 //horizontal sync pulse is 192 pixels long at pixels 1664-1856
+	 //horizontal sync pulse is 112 pixels long at pixels 1328-1440
     //(signal is registered to ensure clean output waveform)
     always_ff @ (posedge Reset or posedge Clk )
     begin : hsync_proc
         if ( Reset ) 
             hs <= 1'b0;
         else  
-            if ((((hc + 1) >= 12'd1664) & ((hc + 1) < 12'd1856))) 
+            if ((((hc + 1) >= 11'd1440) & ((hc + 1) < 11'd1584))) 
                 hs <= 1'b0;
             else 
 				    hs <= 1'b1;
     end
 	 
-    //vertical sync pulse is 3 lines long at line 1201-1203
+    //vertical sync pulse is 3 lines long at line 1025-1027
     //(signal is registered to ensure clean output waveform)
     always_ff @ (posedge Reset or posedge Clk )
     begin : vsync_proc
         if ( Reset ) 
            vs <= 1'b0;
         else 
-            if ( ((vc + 1) == 12'd1201) | ((vc + 1) == 12'd1202) | ((vc + 1) == 12'd1203)) 
+            if ( ((vc + 1) >= 11'd770) | ((vc + 1) == 11'd771) | ((vc + 1) == 11'd772)) 
 			       vs <= 1'b0;
             else 
 			       vs <= 1'b1;
@@ -121,7 +116,7 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
     //(This signal is registered within the DAC chip, so we can leave it as pure combinational logic here)    
     always_comb
     begin 
-        if ( (hc >= 12'd1599) | (vc >= 12'd1199) ) 
+        if ( (hc >= 11'd1368) | (vc >= 11'd768) ) 
             display = 1'b0;
         else 
             display = 1'b1;

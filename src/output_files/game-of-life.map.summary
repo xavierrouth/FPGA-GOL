@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Apr 09 13:33:11 2023
+Analysis & Synthesis Status : Successful - Sun Apr 09 18:36:51 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : game-of-life
 Top-level Entity Name : game_of_life
 Family : MAX 10
-Total logic elements : 596
-    Total combinational functions : 461
-    Dedicated logic registers : 408
-Total registers : 408
+Total logic elements : 608
+    Total combinational functions : 478
+    Dedicated logic registers : 405
+Total registers : 405
 Total pins : 85
 Total virtual pins : 0
 Total memory bits : 128
