@@ -291,7 +291,7 @@ int main()
 	}
 	printf ("I2C Test Program\n");
 
-	alt_avalon_i2c_master_target_set(i2c_dev,0x0880); //CODEC at address 0b0001010
+	alt_avalon_i2c_master_target_set(i2c_dev,0x0A); //CODEC at address 0b0001010
 	//print device ID (verify I2C is working)
 	printf( "Device ID register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_ID));
 

@@ -37,11 +37,10 @@ logic VGA_CLK_FAST;
 logic blank;
 logic [10:0] drawx, drawy;
 logic draw;
+logic SGTL_CLK;
 
-// c0 is 162 Mhz
-// c1 is 25.175
 
-clk_multiplier clk_controller(.inclk0(MAX10_CLK1_50), .areset(RESET), .c0(VGA_CLK));
+clk_multiplier clk_controller(.inclk0(MAX10_CLK1_50), .areset(RESET), .c0(VGA_CLK), .c1(SGTL_CLK));
 vga_controller VGA(.Clk(VGA_CLK), .Reset(RESET), .hs(VGA_HS), .vs(VGA_VS), .blank(blank), .DrawX(drawx), .DrawY(drawy));
 
 // Game Of Life Signals

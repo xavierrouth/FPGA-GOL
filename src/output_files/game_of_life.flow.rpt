@@ -1,5 +1,5 @@
 Flow report for game_of_life
-Mon Apr 10 11:23:14 2023
+Mon Apr 10 12:46:58 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 10 11:23:14 2023       ;
+; Flow Status                        ; Successful - Mon Apr 10 12:46:58 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; game_of_life                                ;
 ; Top-level Entity Name              ; toplevel                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 6,251 / 49,760 ( 13 % )                     ;
-;     Total combinational functions  ; 5,381 / 49,760 ( 11 % )                     ;
-;     Dedicated logic registers      ; 3,231 / 49,760 ( 6 % )                      ;
-; Total registers                    ; 3300                                        ;
+; Total logic elements               ; 6,210 / 49,760 ( 12 % )                     ;
+;     Total combinational functions  ; 5,384 / 49,760 ( 11 % )                     ;
+;     Dedicated logic registers      ; 3,233 / 49,760 ( 6 % )                      ;
+; Total registers                    ; 3302                                        ;
 ; Total pins                         ; 141 / 360 ( 39 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 535,752 / 1,677,312 ( 32 % )                ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/10/2023 11:21:28 ;
+; Start date & time ; 04/10/2023 12:45:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; game_of_life        ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------------------------------+---------------+--------------+------------------+
 ; Assignment Name                      ; Value                                                          ; Default Value ; Entity Name  ; Section Id       ;
 +--------------------------------------+----------------------------------------------------------------+---------------+--------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 96830613240568.168114368829400                                 ; --            ; --           ; --               ;
+; COMPILER_SIGNATURE_ID                ; 96830613240568.168114874328488                                 ; --            ; --           ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                             ; --            ; --           ; testbench        ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                                                      ; --            ; --           ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                                              ; --            ; --           ; eda_simulation   ;
@@ -103,7 +103,7 @@ refer to the applicable agreement for further details.
 ; SLD_FILE                             ; toplevel_soc/synthesis/toplevel_soc.regmap                     ; --            ; --           ; --               ;
 ; SLD_FILE                             ; toplevel_soc/synthesis/toplevel_soc.debuginfo                  ; --            ; --           ; --               ;
 ; SLD_FILE                             ; db/gol_stp_auto_stripped.stp                                   ; --            ; --           ; --               ;
-; SLD_INFO                             ; QSYS_NAME toplevel_soc HAS_SOPCINFO 1 GENERATION_ID 1681140346 ; --            ; toplevel_soc ; --               ;
+; SLD_INFO                             ; QSYS_NAME toplevel_soc HAS_SOPCINFO 1 GENERATION_ID 1681148711 ; --            ; toplevel_soc ; --               ;
 ; SLD_NODE_CREATOR_ID                  ; 110                                                            ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                  ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                        ; --            ; --           ; auto_signaltap_0 ;
@@ -143,12 +143,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:41     ; 1.0                     ; 5077 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:45     ; 1.9                     ; 6221 MB             ; 00:00:32                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 2.6                     ; 4997 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4768 MB             ; 00:00:01                           ;
-; Total                ; 00:01:36     ; --                      ; --                  ; 00:01:00                           ;
+; Analysis & Synthesis ; 00:00:35     ; 1.0                     ; 5089 MB             ; 00:00:18                           ;
+; Fitter               ; 00:00:25     ; 1.6                     ; 6225 MB             ; 00:00:22                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 2.6                     ; 4995 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4762 MB             ; 00:00:01                           ;
+; Total                ; 00:01:08     ; --                      ; --                  ; 00:00:47                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

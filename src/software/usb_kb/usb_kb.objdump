@@ -1113,8 +1113,8 @@ int main()
  80002ac:	21259804 	addi	r4,r4,-27040
  80002b0:	80046140 	call	8004614 <puts>
 
-	alt_avalon_i2c_master_target_set(i2c_dev,0x0880); //CODEC at address 0b0001010
- 80002b4:	01422004 	movi	r5,2176
+	alt_avalon_i2c_master_target_set(i2c_dev,0x0A); //CODEC at address 0b0001010
+ 80002b4:	01400284 	movi	r5,10
  80002b8:	e13ffe17 	ldw	r4,-8(fp)
  80002bc:	80162680 	call	8016268 <alt_avalon_i2c_master_target_set>
 	//print device ID (verify I2C is working)

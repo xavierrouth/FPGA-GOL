@@ -38,7 +38,7 @@ module vga_text_avl_interface (
 	
 	// Exported Conduit (mapped to VGA port - make sure you export in Platform Designer)
 	output logic [3:0]  red, green, blue,	// VGA color channels (mapped to output pins in top-level)
-	output logic hs, vs						// VGA HS/VS
+	output logic hs, vs							// VGA HS/VS
 );
 
 //logic [3:0][7:0] LOCAL_REG       [`NUM_REGS]; // Registers
@@ -71,6 +71,8 @@ logic VGA_CLK;
 logic inverted;
 logic blank;
 
+logic SGTL_CLK;
+
 logic VGA_VS;
 logic VGA_HS;
 
@@ -101,7 +103,7 @@ end
 	
 font_rom	font(.addr(font_addr), .data(font_data));
 
-clk_multiplier clk_controller(.inclk0(CLK), .areset(RESET), .c0(VGA_CLK));
+clk_multiplier clk_controller(.inclk0(CLK), .areset(RESET), .c0(VGA_CLK), .c1(SGTL_CLK));
 
 vga_controller VGA(.Clk(VGA_CLK), .Reset(RESET), .hs(VGA_HS), .vs(VGA_VS), .blank(blank), .DrawX(drawx), .DrawY(drawy));
    

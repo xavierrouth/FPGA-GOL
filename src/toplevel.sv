@@ -131,7 +131,15 @@ module toplevel (
 	assign s_scl_in = I2C_SCL;
 	assign I2C_SCL = (s_scl_oe)?  1'b0 : 1'bz;
 	
-	assign ARDUINO_IO[3] = MAX10_CLK1_50;
+	logic [1:0] SGTL_CLK;
+	
+	// Divide clk by 4
+	always_ff @ (posedge MAX10_CLK1_50) begin
+		SGTL_CLK <= SGTL_CLK + 1;
+	end
+	
+	
+	assign ARDUINO_IO[3] = SGTL_CLK[1];
 	
 	
 	//remember to rename the SOC as necessary
