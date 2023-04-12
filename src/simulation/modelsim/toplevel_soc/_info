@@ -1,0 +1,2084 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/dev/FPGA_GOL/src/simulation/modelsim
+valtera_avalon_i2c
+Z1 !s110 1681228005
+!i10b 1
+!s100 i;I80YB`l0<cOH0Mh0OXC2
+IJjN``lP7?Y<=QzFSIQ[aH3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1681148716
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c.v
+Z4 L0 18
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1681228005.000000
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c.v|
+!i113 1
+Z7 o-vlog01compat -work toplevel_soc
+Z8 !s92 -vlog01compat -work toplevel_soc +incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules
+Z9 tCvgOpt 0
+valtera_avalon_i2c_clk_cnt
+R1
+!i10b 1
+!s100 CAQU3PEJGHFhmUSJ9nV@02
+I6I:5ONQUIgc:>]j^d;:X33
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_clk_cnt.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_clk_cnt.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_clk_cnt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_clk_cnt.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_condt_det
+R1
+!i10b 1
+!s100 NWHS0:R1WP@@17W[f`AJI0
+I^o`c88c`MH=KKEzgcQ4c23
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_det.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_det.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_det.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_det.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_condt_gen
+R1
+!i10b 1
+!s100 F?IU54?<EV_ITzfFeG@`Z2
+I^oWaO[e67D7jV@S>bJ[Wh3
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_gen.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_gen.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_condt_gen.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_csr
+R1
+!i10b 1
+!s100 _=XDE5_WWD1FP8Djl72V@1
+IH5gcRNQ6mS^SERM3ZBS2[1
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_csr.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_csr.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_csr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_csr.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_fifo
+R1
+!i10b 1
+!s100 K6:GE0kJz4H;LzVG[N3Ao2
+IO@VPQe9OJ:Tih3WFbPQbR2
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_fifo.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_fifo.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_fifo.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_mstfsm
+R1
+!i10b 1
+!s100 EoIZ@gjk[7@:RNMP??jE51
+IYUz=Wfb3=0k38e4aXa^UX0
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_mstfsm.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_mstfsm.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_mstfsm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_mstfsm.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_rxshifter
+Z10 !s110 1681228006
+!i10b 1
+!s100 NH?j7@d_^5gIg43`l^N`W3
+Ifj;j4N`AaGz_iKk7E:zEe2
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_rxshifter.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_rxshifter.v
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1681228006.000000
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_rxshifter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_rxshifter.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_spksupp
+R10
+!i10b 1
+!s100 L4Jc3zDI^<U>:e]oA=kFJ0
+IT@[jZ9Djjid;DTohT1g893
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_spksupp.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_spksupp.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_spksupp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_spksupp.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_txout
+R10
+!i10b 1
+!s100 :0U7=ZbJ=6_9QSWgb9VmM1
+IF:H;I49TlPN@eoQ>@g`HK3
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txout.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txout.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txout.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txout.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_i2c_txshifter
+R10
+!i10b 1
+!s100 ceW5>`_l>2G>TjfE>=9`60
+ILMVFol>d[JTSTP91BL=Eg0
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txshifter.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txshifter.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txshifter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_i2c_txshifter.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_sc_fifo
+Z12 !s110 1681228003
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+I2KQRoHlMcZ][T=4fn>5N;0
+R2
+R0
+Z13 w1681148732
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+Z14 L0 21
+R5
+r1
+!s85 0
+31
+Z15 !s108 1681228003.000000
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_st_clock_crosser
+R10
+!i10b 1
+!s100 YbU`iK^TYJ_9Hz`CZekjQ3
+I4f4Yadba=eJe:c<ReH`6C0
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+Z16 L0 22
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_st_handshake_clock_crosser
+R10
+!i10b 1
+!s100 3f<J9K;e[9FU@JKn0^PK?0
+I:`z@@YQ19N:j1ci8OPCnh3
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z17 L0 24
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_merlin_arb_adder
+Z18 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z19 !s110 1681228007
+!i10b 1
+!s100 1Jn[a;@5nZmTN?DFKQNzj2
+I>Rm1=L7JbVYZ9]iQYgF4K3
+R2
+Z20 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R13
+Z21 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Z22 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+Z23 !s108 1681228007.000000
+Z24 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+Z26 o-sv -work toplevel_soc
+Z27 !s92 -sv -work toplevel_soc +incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules
+R9
+valtera_merlin_arbitrator
+R18
+R19
+!i10b 1
+!s100 NQTehjm2fNQROUMUzShGa1
+IHOH27lld`^eZY]zVJFK7h1
+R2
+R20
+S1
+R0
+R13
+R21
+R22
+L0 103
+R5
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R26
+R27
+R9
+valtera_merlin_burst_adapter
+R18
+R19
+!i10b 1
+!s100 OCc70X^k:B?GW6i71n`L_3
+IHkOYH7_c_GM^5g_Smng300
+R2
+!s105 altera_merlin_burst_adapter_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter.sv
+R14
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_burst_adapter_uncompressed_only
+R18
+R19
+!i10b 1
+!s100 STH]BdUM[JDMJZNJGXCd>0
+I2iIH_II0hIQkbU5]zT;W90
+R2
+!s105 altera_merlin_burst_adapter_uncmpr_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+L0 39
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_burst_uncompressor
+R18
+R19
+!i10b 1
+!s100 f1?Rb<=9U?R9LJoHl;7>T3
+IC[4h2]@DS8YMD6O`YTPi92
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_master_agent
+R18
+Z28 !s110 1681228008
+!i10b 1
+!s100 _CJm:YX=>U2LQKH;8=@cb0
+IYf9EY8?lD:UhMW?2^l78B3
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_agent.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R5
+r1
+!s85 0
+31
+Z29 !s108 1681228008.000000
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_master_translator
+R18
+R28
+!i10b 1
+!s100 NdRk@]3fC2C@V7Rm;dQM31
+IBRPW_]g4FZaOBaCbIU32?3
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_translator.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_translator.sv
+L0 32
+R5
+r1
+!s85 0
+31
+R29
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_slave_agent
+R18
+R28
+!i10b 1
+!s100 ePZN1d?B062J`OBb?blff3
+Ig?NWPajYDFkOH6jB9faVd2
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+Z30 L0 34
+R5
+r1
+!s85 0
+31
+R29
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_slave_translator
+R18
+R28
+!i10b 1
+!s100 k`9[YAn_dLTkg;GE`mOb61
+I28;e5zAS04oB7LPQN04hg3
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+R29
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R26
+R27
+R9
+valtera_merlin_width_adapter
+R18
+R19
+!i10b 1
+!s100 QzdA5DP6CReOTH<9QzODa3
+INcVjHN9IIXf>;8Z5Hdo4_0
+R2
+!s105 altera_merlin_width_adapter_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_width_adapter.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_width_adapter.sv
+L0 25
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_width_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_merlin_width_adapter.sv|
+!i113 1
+R26
+R27
+R9
+valtera_reset_controller
+R12
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+IANL<4;:YB^B796eDD[Xke1
+R2
+R0
+Z31 w1681148730
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_controller.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+R9
+valtera_reset_synchronizer
+R12
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+I[0OUk5YC6fVA>IeAU4@6P3
+R2
+R0
+R31
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_synchronizer.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_synchronizer.v
+R17
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+valtera_std_synchronizer_nocut
+R10
+!i10b 1
+!s100 b8zV2<79GgkNg0GC<P[GJ2
+I8I;1z0j]XgRNz_FG;Um7_1
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+L0 44
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_std_synchronizer_nocut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/altera_std_synchronizer_nocut.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc
+R12
+!i10b 1
+!s100 C]5Tln1aOR9>lGSID6<SU3
+IETUN6ckTae18_ac4TTJFz2
+R2
+R0
+Z32 w1681148715
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/toplevel_soc.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/toplevel_soc.v
+L0 6
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/toplevel_soc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/toplevel_soc.v|
+!i113 1
+R7
+!s92 -vlog01compat -work toplevel_soc +incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis
+R9
+vtoplevel_soc_hex_digits_pio
+R10
+!i10b 1
+!s100 kznIK1eU[f6LPTOXKhdo[0
+I[T`X5^Bgd_JDR=>R=MjgB3
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_hex_digits_pio.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_hex_digits_pio.v
+R14
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_hex_digits_pio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_hex_digits_pio.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_irq_mapper
+R18
+R10
+!i10b 1
+!s100 OhD]B@CN0DkVO:_6dIM7m0
+IW13D?ZVX[]W4BO=ii7BNz3
+R2
+!s105 toplevel_soc_irq_mapper_sv_unit
+S1
+R0
+R31
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_irq_mapper.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_irq_mapper.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_jtag_uart_0
+R1
+!i10b 1
+!s100 J;=3Q?6XDnD7W@>V`D]]?1
+I0AAa?L3=;RUV5OnA39ECY2
+R2
+R0
+R3
+Z33 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_jtag_uart_0.v
+Z34 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_jtag_uart_0.v
+L0 331
+R5
+r1
+!s85 0
+31
+R6
+Z35 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_jtag_uart_0.v|
+Z36 !s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_jtag_uart_0.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_jtag_uart_0_scfifo_r
+R1
+!i10b 1
+!s100 ;>cno0W:Oge5=Ro4e5G`>1
+I_CP_L6[ZKY^OG3==aJ[D:2
+R2
+R0
+R3
+R33
+R34
+L0 243
+R5
+r1
+!s85 0
+31
+R6
+R35
+R36
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_jtag_uart_0_scfifo_w
+R1
+!i10b 1
+!s100 J4[R9QXgS3X^=caU@mEAW0
+IX2_E48h>c612QHhUmYR^d1
+R2
+R0
+R3
+R33
+R34
+L0 78
+R5
+r1
+!s85 0
+31
+R6
+R35
+R36
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_jtag_uart_0_sim_scfifo_r
+R1
+!i10b 1
+!s100 z^TLDWBgz:@AWHIGEC=Y;3
+I6FbZaU@M?Wf;5Poa_Km`31
+R2
+R0
+R3
+R33
+R34
+L0 164
+R5
+r1
+!s85 0
+31
+R6
+R35
+R36
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_jtag_uart_0_sim_scfifo_w
+R1
+!i10b 1
+!s100 WDeL^TD=9EV8P`@Fb<`[A0
+IjXV[iXYbh<N4;HXnJAnAf1
+R2
+R0
+R3
+R33
+R34
+R14
+R5
+r1
+!s85 0
+31
+R6
+R35
+R36
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_key
+R1
+!i10b 1
+!s100 5EN]3:8@6]Ad1KjaOBD5R0
+IzG;6KCHD5^]UaQM9XLmY>0
+R2
+R0
+R3
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_key.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_key.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_key.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_keycode
+R1
+!i10b 1
+!s100 F4gnz^RAc4BON1^d78i?L1
+I8X:7SBC2GdCmI>Vj<8`[R1
+R2
+R0
+Z37 w1681148717
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_keycode.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_keycode.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_keycode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_keycode.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_leds_pio
+R1
+!i10b 1
+!s100 <I`iela;o49V8RbQ1OKl>2
+IY7^F=Ml4f`XWZ[7VYbRG_1
+R2
+R0
+R37
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_leds_pio.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_leds_pio.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_leds_pio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_leds_pio.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_mm_interconnect_0
+R12
+!i10b 1
+!s100 Z4hLUZVJhe4cckUiOd`;10
+IjliA=3IVNS2IVh7L:5hjP0
+R2
+R0
+R31
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_mm_interconnect_0_avalon_st_adapter
+R12
+!i10b 1
+!s100 Xh@1hXHEkn>NbVToSFTDk3
+IOW]K]JG?NmK@b2knJ5O<00
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_mm_interconnect_0_avalon_st_adapter_006
+R12
+!i10b 1
+!s100 f@lJFaZWi5Sg]ZfOW]4gA3
+I1U<TAgVf]iffj0AblTAjJ1
+R2
+R0
+Z38 w1681148733
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006.v
+L0 9
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0
+R18
+R10
+!i10b 1
+!s100 UUYn@Ec7kHRaVIY9PL[`V3
+I`Wd25Hhd:_dXTUl7LITEm1
+R2
+!s105 toplevel_soc_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0_sv_unit
+S1
+R0
+R38
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv
+Z39 L0 66
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R18
+R10
+!i10b 1
+!s100 nDBTjB_NJ1nnliPalVCD71
+I_f62d;:2dDj`84NBcUP?A3
+R2
+!s105 toplevel_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R38
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+R39
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_cmd_demux
+R18
+R19
+!i10b 1
+!s100 :DPIX_oJ=o2I7HhccEdck2
+ICbPfCQfhC?5Io]5FF?n812
+R2
+!s105 toplevel_soc_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_demux.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_demux.sv
+Z40 L0 43
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_cmd_mux
+R18
+R19
+!i10b 1
+!s100 d8RJjgUDCzNm>>7l9X19B0
+I7Bl1F1D:EmWVH82<Z:J5P1
+R2
+!s105 toplevel_soc_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_mux.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_mux.sv
+Z41 L0 51
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_router
+R18
+R28
+!i10b 1
+!s100 jB_nSFMN]BFC=KQE`a?AP0
+I^oNjIF6TVZm:Si4]>G6i=3
+R2
+Z42 !s105 toplevel_soc_mm_interconnect_0_router_sv_unit
+S1
+R0
+R13
+Z43 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router.sv
+Z44 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router.sv
+Z45 L0 84
+R5
+r1
+!s85 0
+31
+R23
+Z46 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router.sv|
+Z47 !s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_router_002
+R18
+R19
+!i10b 1
+!s100 Zl74al<Z7DU;cfVAgQC[G2
+I[L]^JWBeIb1nd>>AYCP5Q2
+R2
+Z48 !s105 toplevel_soc_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R13
+Z49 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_002.sv
+Z50 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_002.sv
+R45
+R5
+r1
+!s85 0
+31
+R23
+Z51 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_002.sv|
+Z52 !s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_002.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_router_002_default_decode
+R18
+R19
+!i10b 1
+!s100 JQ6aGW@@NDH3bc6KRdBRG0
+IWUdCY?<Aei2IUYA0<M>e53
+R2
+R48
+S1
+R0
+R13
+R49
+R50
+Z53 L0 45
+R5
+r1
+!s85 0
+31
+R23
+R51
+R52
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_router_008
+R18
+R19
+!i10b 1
+!s100 dYF8e46=]BRz1aQ2G4>Rk2
+IY95L40TazkiFnQ:NMn4B`3
+R2
+Z54 !s105 toplevel_soc_mm_interconnect_0_router_008_sv_unit
+S1
+R0
+R13
+Z55 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_008.sv
+Z56 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_008.sv
+R45
+R5
+r1
+!s85 0
+31
+R23
+Z57 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_008.sv|
+Z58 !s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_router_008.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_router_008_default_decode
+R18
+R19
+!i10b 1
+!s100 M>YFOgN?k3CN4Kmm1W0D13
+IdV7OlQSc1>=UZDL6m?CWj2
+R2
+R54
+S1
+R0
+R13
+R55
+R56
+R53
+R5
+r1
+!s85 0
+31
+R23
+R57
+R58
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_router_default_decode
+R18
+R28
+!i10b 1
+!s100 bnK1:ZVLOznm7Xo1^F;kA1
+IFe>[cY1@z0Y_OikKAzAk91
+R2
+R42
+S1
+R0
+R13
+R43
+R44
+R53
+R5
+r1
+!s85 0
+31
+R23
+R46
+R47
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_rsp_demux
+R18
+R19
+!i10b 1
+!s100 7H<^M:<R9R?W6:b>HmCnn0
+I_LW?>LZYYlMAcgS8YNUcD1
+R2
+!s105 toplevel_soc_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_demux.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_demux.sv
+R40
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_mm_interconnect_0_rsp_mux
+R18
+R19
+!i10b 1
+!s100 `3Rz_W:806AA@NNUN]=963
+If4M?MC05l>W<^gjM7ESV10
+R2
+!s105 toplevel_soc_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_mux.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_mux.sv
+R41
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R26
+R27
+R9
+vtoplevel_soc_nios2_gen2_0
+Z59 !s110 1681228004
+!i10b 1
+!s100 Jha=0UG1>@HgVOQEoD;><1
+Igk:fcm_X;85>02PMX28V<2
+R2
+R0
+R37
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+Z60 !s108 1681228004.000000
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu
+R59
+!i10b 1
+!s100 YY9D30o@_6X4lS?1PCXO63
+IlACM]G^J`MM5>4=1b`Y5d3
+R2
+R0
+R13
+Z61 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu.v
+Z62 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu.v
+L0 2834
+R5
+r1
+!s85 0
+31
+R60
+Z63 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu.v|
+Z64 !s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_debug_slave_sysclk
+R59
+!i10b 1
+!s100 P4;iGJ0^@2nZYBd0>dd:<2
+ImHL[5Z6>>Y;n6Y7TUW>Hm2
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+R14
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_debug_slave_tck
+R59
+!i10b 1
+!s100 HH4nf:LA01UDO6jCfK6Bc3
+IbR=I::adgPZ67^2QVcAMc1
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+R14
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_tck.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_debug_slave_wrapper
+R1
+!i10b 1
+!s100 XF273_lBJPhI=C[3W7`890
+IecXzB>EXefDR:HQjA<IeY0
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_avalon_reg
+R59
+!i10b 1
+!s100 EK?nB02H==3]`ajQ@@CoV2
+I37US^ZReBLnH?<@o:SP`f0
+R2
+R0
+R13
+R61
+R62
+L0 2023
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci
+R59
+!i10b 1
+!s100 SPe=`n9>fmbOMfYd8M6000
+I^0N3P>g^neBJY^dGGgjia0
+R2
+R0
+R13
+R61
+R62
+L0 2362
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_break
+R59
+!i10b 1
+!s100 okoBWMj4I;dgRD70dP3UC1
+I9hi3Aa8jUhOLf[dQd0l@l2
+R2
+R0
+R13
+R61
+R62
+L0 295
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+R59
+!i10b 1
+!s100 IOJk=B@LS5kVU5BmE@Q;m3
+I2_>;bl^c1Heio`O93>33n3
+R2
+R0
+R13
+R61
+R62
+L0 1265
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_dbrk
+R59
+!i10b 1
+!s100 F8KnPzOg7ZHfULS`ljjHP1
+IRf[465OOVkfCo;acZU:OW3
+R2
+R0
+R13
+R61
+R62
+L0 795
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_debug
+R59
+!i10b 1
+!s100 GoE`M0]070fOlWYTBG:ae0
+IeQ?McKl=PT7lcKT]oT@;l1
+R2
+R0
+R13
+R61
+R62
+L0 153
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_dtrace
+R59
+!i10b 1
+!s100 0gDjF:f2RORk_]cMAYTfD1
+I7@h125kBI`?2OGIb1<H<z0
+R2
+R0
+R13
+R61
+R62
+L0 1183
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_fifo
+R59
+!i10b 1
+!s100 @B`]Qf3dBa495M<`Zo=a>2
+IRg3kDXgkQge<Om3i2OhdD1
+R2
+R0
+R13
+R61
+R62
+L0 1427
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+R59
+!i10b 1
+!s100 0c1DN0PHl980X@P[5ChGN0
+IIi6[Lmd?5ZTzk<[1@nL]S0
+R2
+R0
+R13
+R61
+R62
+L0 1380
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+R59
+!i10b 1
+!s100 h_W^2K4g4k<g2K:o3?E`J2
+IN8DCS]]81UEDPAfTY2Yh>1
+R2
+R0
+R13
+R61
+R62
+L0 1337
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_im
+R59
+!i10b 1
+!s100 PlOiXzFcg6J;UAMefnF@i0
+I_W]h?ild5>e[JCZVbSYe^2
+R2
+R0
+R13
+R61
+R62
+L0 1936
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_itrace
+R59
+!i10b 1
+!s100 ]?7F8Fe0kGN_DchAC6>TO0
+IZ@]?Hf0@<foI9PC>8906F0
+R2
+R0
+R13
+R61
+R62
+L0 982
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_pib
+R59
+!i10b 1
+!s100 J=Rj02n_ccb?zQ?UVo;LK3
+I35L336GEz`Id?Dk?jJoDd2
+R2
+R0
+R13
+R61
+R62
+L0 1913
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_td_mode
+R59
+!i10b 1
+!s100 5_ezEaL]naGT4LzKA>:FU0
+I11k5`U3f4Bf<m>8_DHMco1
+R2
+R0
+R13
+R61
+R62
+L0 1115
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_oci_xbrk
+R59
+!i10b 1
+!s100 k;0OBmSLK5So;HXMnNZ9C0
+IZMYk7j?8CG<lo2dBg4eod0
+R2
+R0
+R13
+R61
+R62
+L0 588
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_ocimem
+R59
+!i10b 1
+!s100 6IAamY6m_?ne@oH5Wicac1
+I1PV_mBAK?[3hE?=mi<Ma<1
+R2
+R0
+R13
+R61
+R62
+L0 2181
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_nios2_performance_monitors
+R59
+!i10b 1
+!s100 L`aF9^nGji^V0eCil[XzN2
+I`B^31Pg9D=Jk6H`bYlhWd1
+R2
+R0
+R13
+R61
+R62
+L0 2006
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_ociram_sp_ram_module
+R59
+!i10b 1
+!s100 Ti@:a=XHSlONaLoJmBTT>0
+IC]cY]l7?3a;6Z5I21ZPDF0
+R2
+R0
+R13
+R61
+R62
+L0 2116
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_register_bank_a_module
+R59
+!i10b 1
+!s100 T4Q]@Fj[ATMaVHoN?k6UZ0
+IaG1^R`l:j:TZbNNYGb0:12
+R2
+R0
+R13
+R61
+R62
+R14
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_register_bank_b_module
+R59
+!i10b 1
+!s100 <a:VnJi;mY8TF?7ZKbI2E3
+IUCUK_W4ImhP56J6EkY^WN0
+R2
+R0
+R13
+R61
+R62
+L0 87
+R5
+r1
+!s85 0
+31
+R60
+R63
+R64
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_nios2_gen2_0_cpu_test_bench
+R1
+!i10b 1
+!s100 0hCczd8jI_cHZ=SEzlmOP2
+I^2W1eGkFCkiFMZ0@_bTFk1
+R2
+R0
+R13
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_test_bench.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_test_bench.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_nios2_gen2_0_cpu_test_bench.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sdram
+R59
+!i10b 1
+!s100 VRgM?LHMe?ll4zK@m4Y:G2
+IZEamj0PO>hQ6RB[L3o63n0
+R2
+R0
+R37
+Z65 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram.v
+Z66 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram.v
+L0 159
+R5
+r1
+!s85 0
+31
+R60
+Z67 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram.v|
+Z68 !s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sdram_input_efifo_module
+R59
+!i10b 1
+!s100 Hlejf]09mB3zoJ]TYgKCz1
+INNn@5W9g2=Oe50Qc8OP9i2
+R2
+R0
+R37
+R65
+R66
+R14
+R5
+r1
+!s85 0
+31
+R60
+R67
+R68
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sdram_pll
+R59
+!i10b 1
+!s100 d:>aMFFX?H3h0AJ0Eg[E31
+I2bKZlSodcSCe>CgRFI7393
+R2
+R0
+Z69 w1681148718
+Z70 8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram_pll.v
+Z71 FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram_pll.v
+L0 217
+R5
+r1
+!s85 0
+31
+R60
+Z72 !s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram_pll.v|
+Z73 !s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sdram_pll.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sdram_pll_altpll_vg92
+R59
+!i10b 1
+!s100 ?>;]K>0[=hL6EQ>7;ATON3
+INDciH7YJ;[fXGAHCkLG=90
+R2
+R0
+R69
+R70
+R71
+L0 130
+R5
+r1
+!s85 0
+31
+R60
+R72
+R73
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sdram_pll_dffpipe_l2c
+R59
+!i10b 1
+!s100 Ln[5l9n:A5iA2LoRKl^<j3
+IWOPPm24UQBd_>MAA@ZR0S2
+R2
+R0
+R69
+R70
+R71
+L0 37
+R5
+r1
+!s85 0
+31
+R60
+R72
+R73
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sdram_pll_stdsync_sv6
+R59
+!i10b 1
+!s100 O[`jZ]mERBmnh9ZU12@151
+IePnjS753FCmjUJ`[X7gZL3
+R2
+R0
+R69
+R70
+R71
+L0 98
+R5
+r1
+!s85 0
+31
+R60
+R72
+R73
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_spi_0
+R59
+!i10b 1
+!s100 ?`?g]4VzziT]^1>J;Re8Q2
+Ia^CONBjG9@?JC8GTQzHa:2
+R2
+R0
+R69
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_spi_0.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_spi_0.v
+L0 41
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_spi_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_spi_0.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_sysid_qsys_0
+R59
+!i10b 1
+!s100 ;0QB<kGGmDhFVkmn=me490
+IPbW;AB=@HI6;zKP2oWMj62
+R2
+R0
+R69
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sysid_qsys_0.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sysid_qsys_0.v
+R30
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sysid_qsys_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_sysid_qsys_0.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_timer_0
+R59
+!i10b 1
+!s100 6^]^HY00?KVX1M]=6cdcn1
+I0b@N3Q>7VQIz=]XnWBkcl3
+R2
+R0
+R69
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_timer_0.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_timer_0.v
+R14
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_timer_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_timer_0.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_usb_gpx
+R59
+!i10b 1
+!s100 6[7`?hS8J6:GNN6mBS5iI2
+I;FcjI2Om[]cSDQ9`_n[5A3
+R2
+R0
+R69
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_gpx.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_gpx.v
+R14
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_gpx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_gpx.v|
+!i113 1
+R7
+R8
+R9
+vtoplevel_soc_usb_rst
+R59
+!i10b 1
+!s100 LnHnhIWGklkE[PF7jkKb70
+IjSQMnI0hQYa5?417@?n<A0
+R2
+R0
+w1681148719
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_rst.v
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_rst.v
+R14
+R5
+r1
+!s85 0
+31
+R60
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_rst.v|
+!s90 -reportprogress|300|-vlog01compat|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/toplevel_soc_usb_rst.v|
+!i113 1
+R7
+R8
+R9
+vvga_text_avl_interface
+R18
+R28
+!i10b 1
+!s100 40lMh9`G>mag@8;hmhCLD2
+I1_:RPKz]g3OF;kkZ9M?QP3
+R2
+!s105 vga_text_avl_interface_sv_unit
+S1
+R0
+R32
+8C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/vga_text_avl_interface.sv
+FC:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/vga_text_avl_interface.sv
+R16
+R5
+r1
+!s85 0
+31
+R29
+!s107 C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/vga_text_avl_interface.sv|
+!s90 -reportprogress|300|-sv|-work|toplevel_soc|+incdir+C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules|C:/dev/FPGA_GOL/src/toplevel_soc/synthesis/submodules/vga_text_avl_interface.sv|
+!i113 1
+R26
+R27
+R9

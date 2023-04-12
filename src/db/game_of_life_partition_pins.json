@@ -392,7 +392,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "ARDUINO_IO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ARDUINO_IO[2]",
+					"strict" : false
+				},
+				{
 					"name" : "ARDUINO_IO[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ARDUINO_IO[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ARDUINO_IO[5]",
 					"strict" : false
 				},
 				{
@@ -420,7 +436,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "MAX10_CLK1_50",
+					"name" : "KEY[1]",
 					"strict" : false
 				},
 				{
@@ -428,7 +444,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[1]",
+					"name" : "MAX10_CLK1_50",
+					"strict" : false
+				},
+				{
+					"name" : "SW[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
 					"strict" : false
 				},
 				{

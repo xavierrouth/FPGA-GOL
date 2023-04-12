@@ -3,77 +3,45 @@ module testbench();
 timeunit 1ps;	// Half clock cycle at 50 MHz
 			
 ///////// Clocks /////////
-logic              Clk;
+logic  MCLK;
+logic  LRCLK;
+logic  SCLK;
 
-///////// KEY /////////
-logic    [ 1: 0]   KEY;
+logic reset;
 
-///////// SW /////////
-logic    [ 9: 0]   SW;
+logic [9:0] SW;
 
-///////// LEDR /////////
-logic   [ 9: 0]   LEDR;
+logic data_out;
 
-///////// HEX /////////
-logic   [ 7: 0]   HEX0;
-logic   [ 7: 0]   HEX1;
-logic   [ 7: 0]   HEX2;
-logic   [ 7: 0]   HEX3;
-logic   [ 7: 0]   HEX4;
-logic   [ 7: 0]   HEX5;
-
-///////// VGA /////////
-logic             VGA_HS;
-logic             VGA_VS;
-logic   [ 3: 0]   VGA_R;
-logic   [ 3: 0]   VGA_G;
-logic   [ 3: 0]   VGA_B;
 
 integer TestsFailed = 0;
 
-game_of_life DUT(.MAX10_CLK1_50(Clk), .*);
+sgtl_audio_interface DUT(.MCLK(MCLK), .LRCLK(LRCLK), .SCLK(SCLK), .target_freq(SW[9:0]), .reset(reset), .DOUT(data_out));
 
-always begin : CLOCK_GENERATION
-#1 Clk = ~Clk;
+always begin : MCLK_GENERATION
+#1 MCLK = ~MCLK;
+end
+
+always begin : LRCLK_GENERATION
+#128 LRCLK = ~LRCLK;
+end
+
+always begin : SCLK_GENERATION
+#2 SCLK = ~SCLK;
 end
 
 initial begin: CLOCK_INITIALIZATION
-    Clk = 0;
+    MCLK = 0;
+	 LRCLK = 0;
+	 SCLK = 0;
 end 
 
 
 
 initial begin: TEST_VECTORSs
-KEY[0] = 1'b1;
-
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-#1000000000
-KEY[0] = 1'b1;
+reset = 1'b0; #10
+reset = 1'b1; #256
+reset = 1'b0; 
 end
 
 endmodule

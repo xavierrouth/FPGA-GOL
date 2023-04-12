@@ -56,7 +56,7 @@ module toplevel (
 
 
       ///////// ARDUINO /////////
-      inout    [13: 0]   ARDUINO_IO,
+      inout   logic [13: 0]   ARDUINO_IO,
       inout              ARDUINO_RESET_N 
 
 );
@@ -110,8 +110,11 @@ module toplevel (
 	assign HEX5 = {1'b1, ~signs[1], 3'b111, ~hundreds[1], ~hundreds[1], 1'b1};
 	assign HEX2 = {1'b1, ~signs[0], 3'b111, ~hundreds[0], ~hundreds[0], 1'b1};
 	
+	logic Reset_h;
+	logic play_mode;
 	
-	assign {Reset_h}=~ (KEY[0]); 
+	assign {Reset_h} = ~(KEY[0]); 
+	assign {play_mode} = ~(KEY[1]);
 
 	//assign signs = 2'b00;
 	//assign hex_num_4 = 4'h4;
@@ -139,7 +142,29 @@ module toplevel (
 	end
 	
 	
-	assign ARDUINO_IO[3] = SGTL_CLK[1];
+	assign ARDUINO_IO[3] = SGTL_CLK[1]; // 12.5 MHz SGTL Clock
+	
+	logic sample_gen_dout;
+	
+	
+	// 44.1kHz Sampling Rate
+	sgtl_audio_interface I2S(.MCLK(ARDUINO_IO[3]), .LRCLK(ARDUINO_IO[4]), .SCLK(ARDUINO_IO[5]), .target_freq(SW[9:2]), .wave_select(SW[1:0]), .reset(Reset_h), .DOUT(sample_gen_dout));
+	
+	assign ARDUINO_IO[1] = 1'bz; // Input to FPGA
+	assign sample_gen_dout = 1'bz;
+	
+	logic SGTL_SERIAL_DIN;
+	
+	always_comb begin
+		if (play_mode)
+			SGTL_SERIAL_DIN = ARDUINO_IO[1];
+		else
+			SGTL_SERIAL_DIN = sample_gen_dout;
+	end
+	
+	assign ARDUINO_IO[2] = SGTL_SERIAL_DIN; // Output from FPGA
+	
+	
 	
 	
 	//remember to rename the SOC as necessary

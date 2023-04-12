@@ -1,5 +1,5 @@
 Flow report for game_of_life
-Mon Apr 10 12:46:58 2023
+Tue Apr 11 13:35:00 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 10 12:46:58 2023       ;
+; Flow Status                        ; Successful - Tue Apr 11 13:35:00 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; game_of_life                                ;
 ; Top-level Entity Name              ; toplevel                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 6,210 / 49,760 ( 12 % )                     ;
-;     Total combinational functions  ; 5,384 / 49,760 ( 11 % )                     ;
-;     Dedicated logic registers      ; 3,233 / 49,760 ( 6 % )                      ;
-; Total registers                    ; 3302                                        ;
+; Total logic elements               ; 6,586 / 49,760 ( 13 % )                     ;
+;     Total combinational functions  ; 5,652 / 49,760 ( 11 % )                     ;
+;     Dedicated logic registers      ; 3,466 / 49,760 ( 7 % )                      ;
+; Total registers                    ; 3535                                        ;
 ; Total pins                         ; 141 / 360 ( 39 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 535,752 / 1,677,312 ( 32 % )                ;
+; Total memory bits                  ; 928,840 / 1,677,312 ( 55 % )                ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
 ; Total PLLs                         ; 2 / 4 ( 50 % )                              ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/10/2023 12:45:43 ;
+; Start date & time ; 04/11/2023 13:33:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; game_of_life        ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------------------------------+---------------+--------------+------------------+
 ; Assignment Name                      ; Value                                                          ; Default Value ; Entity Name  ; Section Id       ;
 +--------------------------------------+----------------------------------------------------------------+---------------+--------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 96830613240568.168114874328488                                 ; --            ; --           ; --               ;
+; COMPILER_SIGNATURE_ID                ; 96830613240568.168123802320356                                 ; --            ; --           ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                             ; --            ; --           ; testbench        ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                                                      ; --            ; --           ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                                              ; --            ; --           ; eda_simulation   ;
@@ -107,15 +107,10 @@ refer to the applicable agreement for further details.
 ; SLD_NODE_CREATOR_ID                  ; 110                                                            ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                  ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                        ; --            ; --           ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=1                                                ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=1                                             ; --            ; --           ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=1                                   ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334528                                        ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                         ; --            ; --           ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000000                    ; --            ; --           ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=24                                   ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                  ; --            ; --           ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=128                                           ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                     ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                 ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                              ; --            ; --           ; auto_signaltap_0 ;
@@ -123,7 +118,6 @@ refer to the applicable agreement for further details.
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                   ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                      ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                            ; --            ; --           ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=128                                           ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                       ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                         ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=0                                             ; --            ; --           ; auto_signaltap_0 ;
@@ -131,6 +125,12 @@ refer to the applicable agreement for further details.
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                           ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                   ; --            ; --           ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                  ; --            ; --           ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=6                                                ; --            ; --           ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=6                                   ; --            ; --           ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000000000000000           ; --            ; --           ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=33                                   ; --            ; --           ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=65536                                         ; --            ; --           ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=65536                                         ; --            ; --           ; auto_signaltap_0 ;
 ; SOPCINFO_FILE                        ; toplevel_soc/synthesis/../../toplevel_soc.sopcinfo             ; --            ; --           ; --               ;
 ; SYNTHESIS_ONLY_QIP                   ; On                                                             ; --            ; --           ; --               ;
 ; TOP_LEVEL_ENTITY                     ; toplevel                                                       ; game_of_life  ; --           ; --               ;
@@ -143,12 +143,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:35     ; 1.0                     ; 5089 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:25     ; 1.6                     ; 6225 MB             ; 00:00:22                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 2.6                     ; 4995 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4762 MB             ; 00:00:01                           ;
-; Total                ; 00:01:08     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 5072 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:27     ; 1.6                     ; 6234 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:04     ; 2.6                     ; 5003 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4771 MB             ; 00:00:01                           ;
+; Total                ; 00:01:08     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

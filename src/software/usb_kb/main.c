@@ -348,7 +348,7 @@ int main()
 			SGTL5000_ADC_SEL_LINE_IN << SGTL5000_ADC_SEL_SHIFT);
 	printf( "CHIP_ANA_CTRL register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_ANA_CTRL));
 
-	//ADC -> I2S out, I2S in -> DAC
+	//ADC -> I2` out, I2S in -> DAC
 	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_CHIP_SSS_CTRL, \
 			SGTL5000_DAC_SEL_I2S_IN << SGTL5000_DAC_SEL_SHIFT |
 			SGTL5000_I2S_OUT_SEL_ADC << SGTL5000_I2S_OUT_SEL_SHIFT);
@@ -356,10 +356,26 @@ int main()
 
 	printf( "CHIP_ANA_CTRL register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_ANA_CTRL));
 
+	printf( "CHIP_DAC_VOL register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_DAC_VOL));
+
+	printf( "CHIP_ANA_HP_CTRL register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_ANA_HP_CTRL));
+
 	//ADC -> I2S out, I2S in -> DAC
 	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_CHIP_ADCDAC_CTRL, 0x0000);
 	printf( "CHIP_ADCDAC_CTRL register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_ADCDAC_CTRL));
 	printf( "CHIP_PAD_STRENGTH register: %x\n", SGTL5000_Reg_Rd (i2c_dev, SGTL5000_CHIP_PAD_STRENGTH));
+
+	// Volume Control Tutorial
+	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_CHIP_ANA_HP_CTRL, 0x0000);
+	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_HP_MUTE, 0x0000);
+	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_LINE_OUT_MUTE, 0x0000);
+
+	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_DAC_MUTE_RIGHT, 0x0000);
+	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_DAC_MUTE_LEFT, 0x0000);
+	SGTL5000_Reg_Wr(i2c_dev, SGTL5000_ADC_MUTE, 0x0000);
+
+
+
 
 
 	return 0;
